@@ -1,0 +1,93 @@
+.form {
+    display: none;
+  }
+  
+  label {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .main {
+    background: linear-gradient(blue, pink);
+  }
+  
+  .cardimg {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),center/cover; 
+    color: #FAF9F6; 
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .img {
+    border-radius: 50%;
+  }
+  
+  /* Styles for input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="phone"] {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="phone"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Styles for buttons */
+  button[type="submit"],
+  button[type="button"] {
+    padding: 12px 24px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    min-width: 120px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button[type="button"] {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 767px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"] {
+      width: calc(100% - 20px);
+      margin: 8px 0;
+    }
+    
+    .d-md-flex {
+      flex-direction: column;
+    }
+    
+    .w-50 {
+      width: 100%;
+    }
+    
+    .cardimg {
+      background-size: cover;
+    }
+  }
+  
